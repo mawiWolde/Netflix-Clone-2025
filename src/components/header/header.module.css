@@ -1,0 +1,49 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 2px 5px;
+}
+
+.logoandNavigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 75%;
+  min-width: 0;
+}
+
+.navLogo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.naveLink {
+  flex: 1;
+  min-width: 0;
+}
+
+.naveLink ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.naveLink ul li {
+  white-space: nowrap;
+}
+
+.icons ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
