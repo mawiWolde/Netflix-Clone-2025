@@ -3,6 +3,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import style from "./footer.module.css";
+import XIcon from "@mui/icons-material/X";
 
 const footerColumns = [
   ["Audio Description", "Investor Relations", "Legal Notice"],
@@ -19,6 +20,7 @@ const Footer = () => {
           <FacebookOutlinedIcon />
           <InstagramIcon />
           <YouTubeIcon />
+          <XIcon />
         </div>
 
         <div className={style.footerLinks}>

@@ -4,7 +4,6 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 import NetflixLogo from "@/assets/Netflix_Symbol_RGB.png";
-import XIcon from "@mui/icons-material/X";
 import style from "./header.module.css";
 const navLinks = [
   "Home",
@@ -46,9 +45,6 @@ const Header = () => {
           </li>
           <li>
             <AccountBoxIcon />
-          </li>
-          <li>
-            <XIcon />
           </li>
         </ul>
       </div>

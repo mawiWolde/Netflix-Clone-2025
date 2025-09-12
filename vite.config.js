@@ -7,7 +7,8 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: "/Netflix-Clone-2025/", // must match the repo name exactly (including caps)
+  base: "/Netflix-Clone-2025/",
+
   //set src path
   resolve: {
     alias: {
