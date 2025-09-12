@@ -6,8 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
   base: "/Netflix-Clone-2025/",
+  plugins: [tailwindcss(), react()],
 
   //set src path
   resolve: {
