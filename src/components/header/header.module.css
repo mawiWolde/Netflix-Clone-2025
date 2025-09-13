@@ -2,22 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 2px 5px;
+  gap: 12px;
+  padding: 4px 8px;
 }
 
 .logoandNavigation {
   display: flex;
   align-items: center;
-  gap: 16px;
-  flex: 0 0 75%;
+  gap: 12px;
+  flex: 1 1 75%;
   min-width: 0;
 }
 
 .navLogo {
-  width: 80px;
+  width: 48px;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .naveLink {
@@ -29,7 +30,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -42,7 +43,7 @@
 .icons ul {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;

@@ -1,12 +1,14 @@
 .row {
   margin-left: 20px;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .row_posters {
   display: flex;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 20px;
 }
 
@@ -15,12 +17,12 @@
 }
 
 .row_poster {
-  width: 100%;
   object-fit: contain;
   max-height: 100px;
   margin-right: 10px;
   transition: transform 450ms;
   cursor: pointer;
+  display: block;
 }
 
 .row_poster:hover {

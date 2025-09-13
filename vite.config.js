@@ -9,8 +9,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  base: "/", // repo name, trailing slash required
-  // base: "/Netflix-Clone-2025/", // repo name, trailing slash required
+  base: "/",
+  // base: "/Netflix-Clone-2025/",
   plugins: [tailwindcss(), react()],
   resolve: {
     alias: {

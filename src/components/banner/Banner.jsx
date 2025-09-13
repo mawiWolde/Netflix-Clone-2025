@@ -28,7 +28,8 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "50% 20%"
       }}
     >
       <div className={style.banner_contents}>

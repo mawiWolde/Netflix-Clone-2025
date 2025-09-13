@@ -5,6 +5,7 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 import NetflixLogo from "@/assets/Netflix_Symbol_RGB.png";
 import style from "./header.module.css";
+
 const navLinks = [
   "Home",
   "TV Shows",
@@ -13,12 +14,13 @@ const navLinks = [
   "My List",
   "Browse by Languages"
 ];
+
 const Header = () => {
   return (
     <div className={style.header_container}>
       <div className={style.logoandNavigation}>
         <div className="logo">
-          <a href="/">
+          <a href="/" aria-label="Netflix Home">
             <img
               src={NetflixLogo}
               alt="Netflix Logo"
@@ -26,13 +28,15 @@ const Header = () => {
             />
           </a>
         </div>
-        <div className={style.naveLink}>
+        <nav className={style.naveLink} aria-label="Primary Navigation">
           <ul>
-            {navLinks?.map((items) => (
-              <li key={items}>{items}</li>
+            {navLinks.map((item) => (
+              <li key={item} tabIndex={0}>
+                {item}
+              </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
 
       <div className={style.icons}>
@@ -48,6 +52,13 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      {/* <button
+          className={style.mobileWindowMenu}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+        </button> */}
     </div>
   );
 };
